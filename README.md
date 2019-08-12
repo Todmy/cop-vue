@@ -1,4 +1,5 @@
 # cop-vue
+COP - component oriented programming. What will happen if adapt oop patterns to vue.
 
 ## Project setup
 ```

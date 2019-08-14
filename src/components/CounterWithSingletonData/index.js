@@ -5,9 +5,9 @@ export default Object.assign({}, Counter, {
   name: 'CounterWithSingletonData',
   data: () => (singletonData),
   created() {
-    console.log('===== CounterSingleton created =====');
+    console.log('===== CounterWithSingletonData created =====');
   },
   destroyed() {
-    console.log('===== CounterSingleton destroyed =====');
+    console.log('===== CounterWithSingletonData destroyed =====');
   },
 });

@@ -8,6 +8,8 @@ function loadView(view) {
 }
 
 export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -17,8 +19,12 @@ export default new Router({
     {
       path: '/singleton',
       name: 'singleton',
-      component: loadView('Singleton'),
-      meta: { rootHolder: true },
+      component: loadView('SingletonPage'),
+    },
+    {
+      path: '/singleton-check',
+      name: 'singleton-check',
+      component: loadView('SingletonCheckPage'),
     },
   ],
 });

@@ -7,6 +7,11 @@
     <CounterWithSingletonData />
     <br>
     <CounterSingleton />
+    <br>
+
+    <button @click="inc">
+      increment
+    </button>
   </div>
 </template>
 
@@ -20,6 +25,11 @@ export default {
   components: {
     CounterWithSingletonData,
     CounterSingleton: Singleton(Counter),
+  },
+  methods: {
+    inc(ev) {
+      this.$singleton.Counter.inc();
+    },
   },
 };
 </script>

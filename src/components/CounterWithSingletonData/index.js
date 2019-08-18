@@ -3,7 +3,7 @@ import singletonData from './singletonData';
 
 export default Object.assign({}, Counter, {
   name: 'CounterWithSingletonData',
-  data: () => (singletonData),
+  data: () => singletonData,
   created() {
     console.log('===== CounterWithSingletonData created =====');
   },
